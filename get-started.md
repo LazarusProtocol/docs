@@ -30,13 +30,13 @@ stellar contract invoke \
   --network testnet \
   -- approve \
   --from YOUR_ADMIN_ADDRESS \
-  --spender CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --spender CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --amount 1000000000 \
   --live_until_ledger_seq 3000000
 
 # 2. Register your contract in LazarusVault
 stellar contract invoke \
-  --id CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --id CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --source-account YOUR_ADMIN_SECRET \
   --network testnet \
   -- register_contract \
@@ -56,7 +56,7 @@ When your escrow reserve runs low, the registered `client` can deposit additiona
 
 ```bash
 stellar contract invoke \
-  --id CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --id CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --source-account YOUR_ADMIN_SECRET \
   --network testnet \
   -- deposit_funds \
@@ -71,7 +71,7 @@ The protocol administrator retains 100% sovereign ownership over deposited escro
 
 ```bash
 stellar contract invoke \
-  --id CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --id CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --source-account YOUR_ADMIN_SECRET \
   --network testnet \
   -- emergency_withdraw \
@@ -102,7 +102,7 @@ docker run -d \
   -e LAZARUS_KEEPER_SECRET="S...YOUR_STELLAR_SECRET_KEY" \
   -e LAZARUS_INDEXER_API_URL="https://api.lazarusprotocol.online" \
   -e LAZARUS_RPC_URL="https://soroban-testnet.stellar.org" \
-  -e LAZARUS_VAULT_CONTRACT_ID="CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5" \
+  -e LAZARUS_VAULT_CONTRACT_ID="CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR" \
   ghcr.io/lazarusprotocol/keeper-daemon:latest
 ```
 

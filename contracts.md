@@ -14,11 +14,11 @@ The Lazarus settlement and escrow layer resides in `contracts/lazarus_vault/`. I
 | :--- | :--- |
 | **Network** | Stellar Testnet (`Test SDF Network ; September 2015`) |
 | **Soroban RPC** | `https://soroban-testnet.stellar.org` |
-| **Vault Contract ID** | `CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5` |
-| **WASM Hash** | `f269dcf6ad077039d468936511ad16be5a8867d61a0105a20b6615e13eb70459` |
+| **Vault Contract ID** | `CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR` |
+| **WASM Hash** | `38ad59f3c5ce3f8b6e5e943865b8bfa473c24d116e137bc47b0249c3cc0f757b` |
 | **Escrow SAC Token (USDC)** | `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC` |
 | **Oracle / FROST PubKey** | `197f6b23e16c8532c6abc838facd5ea789be0c76b2920334039bfa8b3d368d61` |
-| **Explorer** | [stellar.expert/explorer/testnet/contract/CCWAH7...](https://stellar.expert/explorer/testnet/contract/CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5) |
+| **Explorer** | [stellar.expert/explorer/testnet/contract/CBKFA2...](https://stellar.expert/explorer/testnet/contract/CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR) |
 
 ---
 
@@ -325,7 +325,7 @@ cargo build --target wasm32v1-none --release --manifest-path contracts/Cargo.tom
 ### Register Contract with Escrow
 ```bash
 stellar contract invoke \
-  --id CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --id CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --source-account YOUR_ADMIN_SECRET \
   --network testnet \
   -- register_contract \
@@ -340,7 +340,7 @@ stellar contract invoke \
 ### Emergency Withdrawal
 ```bash
 stellar contract invoke \
-  --id CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5 \
+  --id CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR \
   --source-account YOUR_ADMIN_SECRET \
   --network testnet \
   -- emergency_withdraw \

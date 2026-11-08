@@ -61,7 +61,7 @@ Lazarus resolves these constraints through four interlocking subsystems:
 | :--- | :--- |
 | **Network** | Stellar Testnet (`Test SDF Network ; September 2015`) |
 | **Soroban RPC** | `https://soroban-testnet.stellar.org` |
-| **LazarusVault Contract ID** | `CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5` |
+| **LazarusVault Contract ID** | `CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR` |
 | **Escrow SAC Token (USDC)** | `CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC` |
 | **Oracle / FROST PubKey** | `197f6b23e16c8532c6abc838facd5ea789be0c76b2920334039bfa8b3d368d61` |
 | **Web Portal** | `https://lazarusprotocol.online/` |

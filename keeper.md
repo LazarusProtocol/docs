@@ -77,7 +77,7 @@ docker run -d \
   -e LAZARUS_KEEPER_SECRET="S...YOUR_STELLAR_SECRET_KEY" \
   -e LAZARUS_INDEXER_API_URL="https://api.lazarusprotocol.online" \
   -e LAZARUS_RPC_URL="https://soroban-testnet.stellar.org" \
-  -e LAZARUS_VAULT_CONTRACT_ID="CCWAH7BVPGYOEBPRFWPZIONBYUCCQH7OARGZLOD6ZV66SOAFBVA2DHD5" \
+  -e LAZARUS_VAULT_CONTRACT_ID="CBKFA2F7RUDGLJNE3K5X2XEXVXRJQ5AMB2NSPREDTATE2ZHDALFKPGUR" \
   -e LAZARUS_BUFFER_FLUSH_INTERVAL="600" \
   ghcr.io/lazarusprotocol/keeper-daemon:latest
 ```
@@ -123,7 +123,7 @@ PYTHONPATH=. python3 -m keeper.cli --once
 | `LAZARUS_INDEXER_API_URL` | `https://api.lazarusprotocol.online` | Base URL of the Lazarus analytical discovery indexer |
 | `LAZARUS_RPC_URL` | `https://soroban-testnet.stellar.org` | Soroban RPC server endpoint |
 | `LAZARUS_NETWORK_PASSPHRASE` | `Test SDF Network ; September 2015` | Stellar network passphrase (`Public Global Stellar Network...` for mainnet) |
-| `LAZARUS_VAULT_CONTRACT_ID` | `CCWAH7...` | Address of the `LazarusVault` contract on Stellar |
+| `LAZARUS_VAULT_CONTRACT_ID` | `CBKFA2...` | Address of the `LazarusVault` contract on Stellar |
 | `LAZARUS_BUFFER_FLUSH_INTERVAL`| `600` | Maximum seconds before flushing buffered vouchers to `record_bump_batch` |
 | `LAZARUS_DEV_STUB_MODE` | `false` | When `true`, enables offline simulation without broadcasting transactions |
 
